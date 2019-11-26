@@ -6,7 +6,7 @@
     <div class="card">
 
         <div class="card-body">
-            <h5 class="card-title">クーポン情報</h5>
+            <h5 class="card-title">投稿情報</h5>
 
             <div class="form-group">
                 <h2>サムネイル画像</h2>

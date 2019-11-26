@@ -119,7 +119,7 @@ class PostController extends Controller
     public function destroy($id)
     {
         //
-        $coupon = Coupon::findOrFail($id);
+        $coupon = Post::findOrFail($id);
         $coupon->delete();
         return redirect()->route('admin.posts.index');
     }

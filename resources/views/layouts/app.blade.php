@@ -22,6 +22,8 @@
     <link href="{{ asset('css/custom_front.css') }}" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
     <link href="{{ asset('css/tagsinput.css') }}" rel="stylesheet" />
+
+    <script data-ad-client="ca-pub-1668811522927993" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     
 </head>
 <body>
@@ -60,7 +62,7 @@
                             <a class="nav-link" href="/mypage/posts/create">投稿</a>
                         </li>
     
-                        
+
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
