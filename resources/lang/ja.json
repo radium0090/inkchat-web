@@ -1,11 +1,11 @@
 {
     "Login": "ログイン",
-    "Register": "新登録!",
+    "Register": "新規登録",
     "Password": "パスワード",
     "Forgot Your Password?": "パスワード忘れた",
     "Remember Me": "パスワード記憶",
-    "Verify Your Email Address" : "メルアド確認",
-    "A fresh verification link has been sent to your email address." : "リンクを送りました。",
+    "Verify Your Email Address" : "メールアドレス確認",
+    "A fresh verification link has been sent to your email address." : "入力したメール宛に認証リンクを送りました。",
     
     "Users": "ユーザー",
     "User": "ユーザー",
