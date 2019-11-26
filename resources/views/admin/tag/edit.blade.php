@@ -8,7 +8,7 @@
         <div class="card-body">
             <h5 class="card-title">タグ編集</h5>
 
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <h2>サムネイル画像</h2>
                 <div class="input-group">
                 <span class="input-group-btn">
@@ -19,7 +19,7 @@
                 <input id="thumbnail2" name="thumbnail" class="form-control" type="text" name="filepath" value="{{$tag->thumbnail}}">
                 </div>
                 <img id="holder2" style="margin-top:15px;max-height:100px;" src="{{$tag->thumbnail}}">
-            </div>
+            </div> -->
 
             <div class="form-group">
                 {!! Form::label('name', '名称*', ['class' => 'control-label']) !!}
