@@ -59,9 +59,8 @@
                         <li class="nav-item {{ request()->is('/mypage/posts/create') ? 'active' : '' }}">
                             <a class="nav-link" href="/mypage/posts/create">投稿</a>
                         </li>
+    
                         
-
-
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">

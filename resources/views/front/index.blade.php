@@ -25,7 +25,7 @@
                     <div class="col-md-8">
                         
                         <div class="card-body">
-                            <h5 class="card-title rounded" style="background-color:#FFB6C1">{{$p->title}}</h5>
+                            <h5 class="card-title rounded" style="">{{$p->title}}</h5>
                             <p class="card-text">{{ $p->body_plain }}</p>
                         </div>
                         <div class="card-body">

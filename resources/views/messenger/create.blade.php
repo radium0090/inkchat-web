@@ -21,7 +21,7 @@
                         <textarea name="message" class="form-control">{{ old('message') }}</textarea>
                     </div>
 
-                    @if($users->count() > 0)
+                    <!-- @if($users->count() > 0)
                         <div class="checkbox">
                             <label class="control-label">送信先</label>
                             @foreach($users as $user)
@@ -29,6 +29,20 @@
                                     <label title="{{ $user->name }}">
                                         <input type="checkbox" name="recipients[]" value="{{ $user->id }}" @if(request('uid') == $user->id) checked @endif readonly>
                                         {!!$user->name!!}
+                                    </label>
+                                @endif
+                            @endforeach
+                        </div>
+                    @endif -->
+
+                    @if($users->count() > 0)
+                        <div class="checkbox">
+                            <label class="control-label">送信先:</label>
+                            @foreach($users as $user)
+                                @if(request('uid') == $user->id)
+                                    <label title="{{ $user->name }}">
+                                        <input type="checkbox" style="opacity:0; position:absolute;" name="recipients[]" value="{{ $user->id }}" @if(request('uid') == $user->id) checked @endif readonly>
+                                        {!!$user->name!!} さん
                                     </label>
                                 @endif
                             @endforeach

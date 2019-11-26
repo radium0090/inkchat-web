@@ -31,8 +31,8 @@
                 {!! Form::textarea('body', old('body'), ['class' => 'form-control', 'id' => 'body' , 'required' => '']) !!}
             </div>
 
-
-            {!! Form::submit("保存", ['class' => 'btn btn-danger']) !!}
+            <div><h6>「*」必須項目</h6></div>
+            {!! Form::submit("送信", ['class' => 'btn btn-danger']) !!}
             {!! Form::close() !!}
         </div>
     </div>
