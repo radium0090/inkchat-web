@@ -59,9 +59,8 @@
                         <li class="nav-item {{ request()->is('/mypage/posts/create') ? 'active' : '' }}">
                             <a class="nav-link" href="/mypage/posts/create">投稿</a>
                         </li>
+    
                         
-
-
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
@@ -123,11 +122,11 @@
         </main>
 
         <footer class="my-5 pt-5 text-muted text-center text-small">
-            <p class="mb-1">&copy; 出会いアプリ</p>
+            <p class="mb-1">&copy; InkChat</p>
             <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Privacy</a></li>
-            <li class="list-inline-item"><a href="#">Terms</a></li>
-            <li class="list-inline-item"><a href="#">Support</a></li>
+            <li class="list-inline-item"><a href="/privacy_policy.html">Privacy Policy</a></li>
+            <li class="list-inline-item"><a href="/terms_and_conditions.html">Terms & Conditions</a></li>
+            <!-- <li class="list-inline-item"><a href="#">Support</a></li> -->
             </ul>
         </footer>
     </div>

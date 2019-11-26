@@ -9,11 +9,11 @@
             <div class="media mb-4">
                 <img style="max-width:64px;max-height:64px;" src="{{$user->thumbnail}}" class="mr-3" alt="...">
                 <div class="media-body">
-                    <h5 class="mt-0">{{$user->name}}</h5>
+                    <h5 class="mt-1">{{$user->name}}</h5>
                     
                     @if (auth()->check()) 
                         @if($user->id == auth()->user()->id)
-                            <span class="badge badge-secondary mt-2 p-2">自分へ送信不可</span>
+                            <span class="badge badge-secondary mt-0 p-2">自分へ送信不可</span>
                         @else
                             <a href="/messages/create?uid={{$user->id}}" class="btn btn-danger btn-sm active mt-2" role="button" aria-pressed="true">メッセージ送信</a>
 
