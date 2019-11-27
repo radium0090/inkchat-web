@@ -22,7 +22,7 @@
             </div> -->
 
             <div class="form-group">
-                <h2>サムネイル画像</h2>
+                <h5>サムネイル画像</h5>
                 <div class="input-group">
                 <span class="input-group-btn">
                     <a id="lfm2" data-input="thumbnail2" data-preview="holder2" class="btn btn-primary">
