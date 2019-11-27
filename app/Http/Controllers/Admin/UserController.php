@@ -94,7 +94,7 @@ class UserController extends Controller
         $user = User::findOrFail($id);
         $user->name = $request->input('name');
         //$user->body = $request->input('body');
-        //$user->thumbnail = $request->input('thumbnail');
+        $user->thumbnail = $request->input('thumbnail');
 
         $user->save();
         return redirect()->route('admin.users.index')->with('message', '更新しました');;

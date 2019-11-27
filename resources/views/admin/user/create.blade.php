@@ -64,6 +64,27 @@
     @parent
 
     <script>
-       
+        {!! \File::get(base_path('vendor/unisharp/laravel-filemanager/public/js/lfm.js')) !!}
     </script>
+    <script>
+        var route_prefix = "{{ url(config('lfm.url_prefix', config('lfm.prefix'))) }}";
+    </script>
+    <script>
+        $('#lfm').filemanager('image', {prefix: route_prefix});
+        $('#lfm2').filemanager('file', {prefix: route_prefix});
+    </script>
+
+    <!-- CKEditor init -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ckeditor/4.5.11/ckeditor.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ckeditor/4.5.11/adapters/jquery.js"></script>
+    <script>
+        $('textarea[name=body]').ckeditor({
+        height: 300,
+        filebrowserImageBrowseUrl: route_prefix + '?type=Files',
+        filebrowserImageUploadUrl: route_prefix + '/upload?type=Files&_token={{csrf_token()}}',
+        filebrowserBrowseUrl: route_prefix + '?type=Files',
+        filebrowserUploadUrl: route_prefix + '/upload?type=Files&_token={{csrf_token()}}'
+        });
+    </script>
+
 @stop
