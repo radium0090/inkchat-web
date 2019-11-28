@@ -579,6 +579,52 @@ pre code {
   overflow-y: scroll;
 }
 
+/* -- post new css -- */
+
+/* css样式 */
+pbody {
+  background: #e5e5e5;
+}
+/* 瀑布流最外层 */
+#proot {
+   margin: 0 auto;
+   width: 1200px;
+   column-count: 5;
+   column-width: 240px;
+   column-gap: 20px;
+}
+/* 每一列图片包含层 */
+.pitem {
+   margin-bottom: 10px;
+   /* 防止多列布局，分页媒体和多区域上下文中的意外中断 */
+   break-inside: avoid;
+   background: #fff;
+}
+.pitem:hover {
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+/* 图片 */
+.pitemImg {
+   width: 100%;
+   vertical-align: middle;
+}
+/* 图片下的信息包含层 */
+.puserInfo {
+   padding: 5px 10px;
+}
+.pavatar {
+   vertical-align: middle;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+}
+.pusername {
+   margin-left: 5px;
+   text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+
+/* ---- */
+
 .container {
   width: 100%;
   padding-right: 15px;
