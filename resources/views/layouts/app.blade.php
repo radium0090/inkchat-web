@@ -23,6 +23,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
     <link href="{{ asset('css/tagsinput.css') }}" rel="stylesheet" />
 
+    <!-- google adsense -->
     <script data-ad-client="ca-pub-1668811522927993" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -139,7 +140,7 @@
             <ul class="list-inline">
             <li class="list-inline-item"><a href="/privacy_policy.html">Privacy Policy</a></li>
             <li class="list-inline-item"><a href="/terms_and_conditions.html">Terms & Conditions</a></li>
-            <!-- <li class="list-inline-item"><a href="#">Support</a></li> -->
+            <li class="list-inline-item"><a href="/contact">Support</a></li>
             </ul>
         </footer>
     </div>
