@@ -1,0 +1,7 @@
+.idea
+/.data
+/.project
+/.docker-sync
+/workspace/cron/*
+/logs/*
+/nginx/nginx.conf
