@@ -20,6 +20,17 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom_front.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/login-main.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/login-util.css') }}" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('fonts/Linearicons-Free-v1.0.0/icon-font.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/animate/animate.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/css-hamburgers/hamburgers.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/animsition/css/animsition.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/select2/select2.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/daterangepicker/daterangepicker.css') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" />
     <link href="{{ asset('css/tagsinput.css') }}" rel="stylesheet" />
 
@@ -36,21 +47,21 @@
         gtag('config', 'UA-153523067-1');
     </script>
 
-    
+
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <img src="{{ asset('img/logo.png') }}" alt="{{ config('app.name', 'Laravel') }}" width="120">
                 </a>
-                
+
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <!-- <span class="navbar-toggler-icon"></span> -->
                     <span class="icon-bar top-bar"></span>
 	                <span class="icon-bar middle-bar"></span>
-	                <span class="icon-bar bottom-bar"></span>	
+	                <span class="icon-bar bottom-bar"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class=".navbar-text">
@@ -73,7 +84,7 @@
                         <li class="nav-item {{ request()->is('/mypage/posts/create') ? 'active' : '' }}">
                             <a class="nav-link" href="/mypage/posts/create">投稿</a>
                         </li>
-    
+
 
                         <!-- Authentication Links -->
                         @guest
@@ -107,7 +118,7 @@
                         <li class="nav-item {{ request()->is('/contact') || request()->is('/contact/*') ? 'active' : '' }}">
                             <a class="nav-link" href="/contact">運営へお問合せ</a>
                         </li>
-                        
+
                     </ul>
 
                    　
@@ -145,6 +156,15 @@
         </footer>
     </div>
     @yield('javascript')
+    <script src="{{ asset('vendor/jquery/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('vendor/animsition/js/animsition.min.js') }}"></script>
+    <script src="{{ asset('vendor/bootstrap/js/popper.js') }}"></script>
+    <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('vendor/select2/select2.min.js') }}"></script>
+    <script src="{{ asset('vendor/daterangepicker/moment.min.js') }}"></script>
+    <script src="{{ asset('vendor/daterangepicker/daterangepicker.js') }}"></script>
+    <script src="{{ asset('vendor/countdowntime/countdowntime.js') }}"></script>
+    <script src="{{ asset('js/login-main.js') }}"></script>
     <script>
         $(document).ready(function(){
             @if (!auth() -> guest())
